@@ -1,0 +1,24 @@
+{
+  "startingCoins": 150,
+  "startingVault": 0,
+  "startingVaultCapacity": 500,
+  "startingTreasuryCap": 5000,
+  "startingStorage": {
+    "bulk": 200,
+    "standard": 100,
+    "perishable": 100,
+    "precious": 50
+  },
+  "tierThresholds": {
+    "1": 0,
+    "2": 1000,
+    "3": 10000,
+    "4": 100000,
+    "5": 2000000,
+    "6": 10000000,
+    "7": 50000000,
+    "8": 250000000,
+    "9": 500000000,
+    "10": 1000000000
+  }
+}

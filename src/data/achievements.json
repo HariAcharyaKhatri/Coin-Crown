@@ -1,0 +1,545 @@
+[
+  {
+    "achievementId": "ach.lifetime.first_coin",
+    "scope": "lifetime",
+    "title": "First Spark of Wealth",
+    "description": "Earn your very first coin.",
+    "condition": { "type": "lifetime_coins", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 10 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.first_click",
+    "scope": "lifetime",
+    "title": "Calloused Hands",
+    "description": "Tap to collect coins for the first time.",
+    "condition": { "type": "click_collect", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 10 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.first_sale",
+    "scope": "lifetime",
+    "title": "Humble Trader",
+    "description": "Sell your first item on the market.",
+    "condition": { "type": "sell_item_count", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 25 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.first_harvest",
+    "scope": "lifetime",
+    "title": "First Sheaf",
+    "description": "Harvest your first crop of wheat.",
+    "condition": { "type": "produce_item", "target": "item.raw.wheat", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 20 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.first_house",
+    "scope": "lifetime",
+    "title": "Under One Roof",
+    "description": "Own your first residential building.",
+    "condition": { "type": "own_category", "target": "residential", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 50 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.first_plot",
+    "scope": "lifetime",
+    "title": "Claiming the Earth",
+    "description": "Acquire your first land plot.",
+    "condition": { "type": "owned_plots", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 50 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.first_worker",
+    "scope": "lifetime",
+    "title": "Help Wanted",
+    "description": "Hire your first worker.",
+    "condition": { "type": "hire_worker", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 50 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.first_manager",
+    "scope": "lifetime",
+    "title": "Delegation of Duty",
+    "description": "Hire your first manager.",
+    "condition": { "type": "hire_manager", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 100 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.first_mine",
+    "scope": "lifetime",
+    "title": "Into the Deep",
+    "description": "Construct your first mining excavation.",
+    "condition": { "type": "own_category", "target": "mining", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 200 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.first_trade",
+    "scope": "lifetime",
+    "title": "Caravan Bound",
+    "description": "Dispatch your first regional trade route.",
+    "condition": { "type": "routes_established", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 250 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.thousand",
+    "scope": "lifetime",
+    "title": "Thousand Gold",
+    "description": "Amass 1,000 lifetime coins.",
+    "condition": { "type": "lifetime_coins", "threshold": 1000 },
+    "reward": [{ "type": "coins", "amount": 100 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.ten_thousand",
+    "scope": "lifetime",
+    "title": "Ten Thousand Gold",
+    "description": "Amass 10,000 lifetime coins.",
+    "condition": { "type": "lifetime_coins", "threshold": 10000 },
+    "reward": [{ "type": "coins", "amount": 500 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.hundred_thousand",
+    "scope": "lifetime",
+    "title": "A Hundred Thousand",
+    "description": "Amass 100,000 lifetime coins.",
+    "condition": { "type": "lifetime_coins", "threshold": 100000 },
+    "reward": [{ "type": "coins", "amount": 2000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.million",
+    "scope": "lifetime",
+    "title": "One in a Million",
+    "description": "Amass 1,000,000 lifetime coins.",
+    "condition": { "type": "lifetime_coins", "threshold": 1000000 },
+    "reward": [{ "type": "coins", "amount": 10000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.ten_million",
+    "scope": "lifetime",
+    "title": "Dynastic Coffers",
+    "description": "Amass 10,000,000 lifetime coins.",
+    "condition": { "type": "lifetime_coins", "threshold": 10000000 },
+    "reward": [{ "type": "coins", "amount": 50000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.village_founder",
+    "scope": "lifetime",
+    "title": "Village Founder",
+    "description": "Advance your estate to Realm Tier 2.",
+    "condition": { "type": "realm_tier", "threshold": 2 },
+    "reward": [{ "type": "coins", "amount": 200 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.settlement",
+    "scope": "lifetime",
+    "title": "Settlement Overseer",
+    "description": "Advance your estate to Realm Tier 3.",
+    "condition": { "type": "realm_tier", "threshold": 3 },
+    "reward": [{ "type": "coins", "amount": 500 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.mining_town",
+    "scope": "lifetime",
+    "title": "Mining Town",
+    "description": "Advance your estate to Realm Tier 4.",
+    "condition": { "type": "realm_tier", "threshold": 4 },
+    "reward": [{ "type": "coins", "amount": 1000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.medieval_town",
+    "scope": "lifetime",
+    "title": "Medieval Township",
+    "description": "Advance your estate to Realm Tier 5.",
+    "condition": { "type": "realm_tier", "threshold": 5 },
+    "reward": [{ "type": "coins", "amount": 2500 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.noble_estate",
+    "scope": "lifetime",
+    "title": "Noble Estate",
+    "description": "Advance your estate to Realm Tier 6.",
+    "condition": { "type": "realm_tier", "threshold": 6 },
+    "reward": [{ "type": "coins", "amount": 5000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.medieval_city",
+    "scope": "lifetime",
+    "title": "Grand Medieval City",
+    "description": "Advance your estate to Realm Tier 7.",
+    "condition": { "type": "realm_tier", "threshold": 7 },
+    "reward": [{ "type": "coins", "amount": 10000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.lordship",
+    "scope": "lifetime",
+    "title": "Sovereign Lordship",
+    "description": "Advance your estate to Realm Tier 8.",
+    "condition": { "type": "realm_tier", "threshold": 8 },
+    "reward": [{ "type": "coins", "amount": 25000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.kingdom",
+    "scope": "lifetime",
+    "title": "Sovereign Kingdom",
+    "description": "Advance your estate to Realm Tier 9.",
+    "condition": { "type": "realm_tier", "threshold": 9 },
+    "reward": [{ "type": "coins", "amount": 50000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.imperial_dynasty",
+    "scope": "lifetime",
+    "title": "Imperial Dynasty",
+    "description": "Ascend to the pinnacle of power at Realm Tier 10.",
+    "condition": { "type": "realm_tier", "threshold": 10 },
+    "reward": [{ "type": "coins", "amount": 100000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.master_farmer",
+    "scope": "lifetime",
+    "title": "Master of the Scythe",
+    "description": "Produce a cumulative total of 1,000 agricultural crops.",
+    "condition": { "type": "total_crops_produced", "threshold": 1000 },
+    "reward": [{ "type": "coins", "amount": 1000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.master_crafter",
+    "scope": "lifetime",
+    "title": "Master Artisan",
+    "description": "Produce 500 processed workshop goods.",
+    "condition": { "type": "total_processed_produced", "threshold": 500 },
+    "reward": [{ "type": "coins", "amount": 2000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.mining_magnate",
+    "scope": "lifetime",
+    "title": "Mining Magnate",
+    "description": "Extract 10,000 raw mineral ores from the earth.",
+    "condition": { "type": "total_ore_produced", "threshold": 10000 },
+    "reward": [{ "type": "coins", "amount": 5000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.gold_baron",
+    "scope": "lifetime",
+    "title": "Baron of Gold",
+    "description": "Refine 1,000 pure gold bars.",
+    "condition": { "type": "produce_item", "target": "item.proc.gold_bar", "threshold": 1000 },
+    "reward": [{ "type": "coins", "amount": 15000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.land_collector",
+    "scope": "lifetime",
+    "title": "Land Baron",
+    "description": "Own 50 plots of land across Eldoria.",
+    "condition": { "type": "owned_plots", "threshold": 50 },
+    "reward": [{ "type": "coins", "amount": 10000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.land_tycoon",
+    "scope": "lifetime",
+    "title": "Continental Tycoon",
+    "description": "Own 150 plots of land.",
+    "condition": { "type": "owned_plots", "threshold": 150 },
+    "reward": [{ "type": "coins", "amount": 50000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.wealthy_merchant",
+    "scope": "lifetime",
+    "title": "Merchant Prince",
+    "description": "Achieve 100,000 coins in trade route revenue.",
+    "condition": { "type": "trade_revenue", "threshold": 100000 },
+    "reward": [{ "type": "coins", "amount": 5000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.trade_empire",
+    "scope": "lifetime",
+    "title": "Trade Empire",
+    "description": "Achieve 10,000,000 coins in trade route revenue.",
+    "condition": { "type": "trade_revenue", "threshold": 10000000 },
+    "reward": [{ "type": "coins", "amount": 100000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.tax_master",
+    "scope": "lifetime",
+    "title": "The Grand Inquisitor",
+    "description": "Collect 1,000,000 coins in sovereign taxes.",
+    "condition": { "type": "lifetime_tax_collected", "threshold": 1000000 },
+    "reward": [{ "type": "coins", "amount": 25000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.lord_of_manor",
+    "scope": "lifetime",
+    "title": "Lord of the Manor",
+    "description": "Complete quest: Lady Isolde's Offer.",
+    "condition": { "type": "quest_completed", "target": "qst.ch06.001", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 10000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.crown_collector",
+    "scope": "lifetime",
+    "title": "High Admiral",
+    "description": "Complete quest: The Royal Fleet.",
+    "condition": { "type": "quest_completed", "target": "qst.ch09.003", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 50000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.royal_treasurer",
+    "scope": "lifetime",
+    "title": "Royal Treasurer",
+    "description": "Reach Tier 9 Kingdom status.",
+    "condition": { "type": "realm_tier", "threshold": 9 },
+    "reward": [{ "type": "coins", "amount": 100000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.king_of_eldoria",
+    "scope": "lifetime",
+    "title": "King of Eldoria",
+    "description": "Reach Tier 9 and complete all of Chapter 9.",
+    "condition": { "type": "quest_completed", "target": "qst.ch09.004", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 250000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.imperial_founder",
+    "scope": "lifetime",
+    "title": "Imperial Founder",
+    "description": "Reach Tier 10 and complete Chapter 10.",
+    "condition": { "type": "quest_completed", "target": "qst.ch10.004", "threshold": 1 },
+    "reward": [{ "type": "dynasty_seal", "amount": 50 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.first_prestige",
+    "scope": "lifetime",
+    "title": "Dynasty Reborn",
+    "description": "Complete your first Prestige rebirth.",
+    "condition": { "type": "prestige_count", "threshold": 1 },
+    "reward": [{ "type": "dynasty_seal", "amount": 5 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.legacy_master",
+    "scope": "lifetime",
+    "title": "Legacy Master",
+    "description": "Reach rank 5 on any legacy tree node.",
+    "condition": { "type": "legacy_max_rank", "threshold": 5 },
+    "reward": [{ "type": "dynasty_seal", "amount": 10 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.all_branches",
+    "scope": "lifetime",
+    "title": "Polymath Sovereign",
+    "description": "Attain at least rank 1 on all 6 legacy branches.",
+    "condition": { "type": "all_branches_rank1", "threshold": 1 },
+    "reward": [{ "type": "dynasty_seal", "amount": 15 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.lifetime.perfect_tax",
+    "scope": "lifetime",
+    "title": "The Golden Mean",
+    "description": "Collect taxes at the neutral 0.15 tax rate for 24 continuous hours.",
+    "condition": { "type": "perfect_tax_hours", "threshold": 24 },
+    "reward": [{ "type": "coins", "amount": 50000 }],
+    "hidden": false
+  },
+
+  {
+    "achievementId": "ach.story.ch01",
+    "scope": "story",
+    "title": "Chapter I: An Heir Arrives",
+    "description": "Complete Chapter 1: The Inherited Estate.",
+    "condition": { "type": "quest_completed", "target": "qst.ch01.004", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 500 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.story.ch02",
+    "scope": "story",
+    "title": "Chapter II: The Village Hearth",
+    "description": "Complete Chapter 2: Self-Sufficiency.",
+    "condition": { "type": "quest_completed", "target": "qst.ch02.003", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 1000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.story.ch03",
+    "scope": "story",
+    "title": "Chapter III: Wheels of Industry",
+    "description": "Complete Chapter 3: The Settlement Prospers.",
+    "condition": { "type": "quest_completed", "target": "qst.ch03.004", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 5000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.story.ch04",
+    "scope": "story",
+    "title": "Chapter IV: Veins of Iron",
+    "description": "Complete Chapter 4: The Smelter's Fire.",
+    "condition": { "type": "quest_completed", "target": "qst.ch04.003", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 10000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.story.ch05",
+    "scope": "story",
+    "title": "Chapter V: Charter of the Realm",
+    "description": "Complete Chapter 5: Two Million.",
+    "condition": { "type": "quest_completed", "target": "qst.ch05.004", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 25000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.story.ch06",
+    "scope": "story",
+    "title": "Chapter VI: Aristocratic Alliances",
+    "description": "Complete Chapter 6: A Noble's Burden.",
+    "condition": { "type": "quest_completed", "target": "qst.ch06.003", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 50000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.story.ch07",
+    "scope": "story",
+    "title": "Chapter VII: Golden spires",
+    "description": "Complete Chapter 7: Lordship Rising.",
+    "condition": { "type": "quest_completed", "target": "qst.ch07.004", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 100000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.story.ch08",
+    "scope": "story",
+    "title": "Chapter VIII: Crown and Citadel",
+    "description": "Complete Chapter 8: The King's Ledger.",
+    "condition": { "type": "quest_completed", "target": "qst.ch08.003", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 250000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.story.ch09",
+    "scope": "story",
+    "title": "Chapter IX: Sovereign Dominance",
+    "description": "Complete Chapter 9: The Imperial Claim.",
+    "condition": { "type": "quest_completed", "target": "qst.ch09.004", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 500000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.story.ch10",
+    "scope": "story",
+    "title": "Chapter X: The Emperor Reborn",
+    "description": "Complete Chapter 10: The Emperor of Eldoria.",
+    "condition": { "type": "quest_completed", "target": "qst.ch10.004", "threshold": 1 },
+    "reward": [{ "type": "dynasty_seal", "amount": 50 }],
+    "hidden": false
+  },
+
+  {
+    "achievementId": "ach.daily.collect",
+    "scope": "daily",
+    "title": "Daily Bounty",
+    "description": "Collect 500 coins via manual clicks today.",
+    "condition": { "type": "daily_clicks", "threshold": 500 },
+    "reward": [{ "type": "coins", "amount": 250 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.daily.harvest",
+    "scope": "daily",
+    "title": "Daily Harvest",
+    "description": "Produce 100 of any agricultural crop today.",
+    "condition": { "type": "daily_crops", "threshold": 100 },
+    "reward": [{ "type": "coins", "amount": 300 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.daily.trade",
+    "scope": "daily",
+    "title": "Daily Market",
+    "description": "Sell 50 goods on the market today.",
+    "condition": { "type": "daily_sales", "threshold": 50 },
+    "reward": [{ "type": "coins", "amount": 400 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.daily.route",
+    "scope": "daily",
+    "title": "Caravan Arrival",
+    "description": "Complete delivery of 1 trade route today.",
+    "condition": { "type": "daily_routes", "threshold": 1 },
+    "reward": [{ "type": "coins", "amount": 500 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.daily.hire",
+    "scope": "daily",
+    "title": "Expanding Ranks",
+    "description": "Hire 2 workers today.",
+    "condition": { "type": "daily_hires", "threshold": 2 },
+    "reward": [{ "type": "coins", "amount": 350 }],
+    "hidden": false
+  },
+
+  {
+    "achievementId": "ach.weekly.earn",
+    "scope": "weekly",
+    "title": "Weekly Fortune",
+    "description": "Earn 100,000 lifetime coins this week.",
+    "condition": { "type": "weekly_coins", "threshold": 100000 },
+    "reward": [{ "type": "coins", "amount": 5000 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.weekly.tax",
+    "scope": "weekly",
+    "title": "Weekly Tithe",
+    "description": "Collect 10,000 tax coins this week.",
+    "condition": { "type": "weekly_tax", "threshold": 10000 },
+    "reward": [{ "type": "coins", "amount": 7500 }],
+    "hidden": false
+  },
+  {
+    "achievementId": "ach.weekly.streak",
+    "scope": "weekly",
+    "title": "Weekly Dedication",
+    "description": "Complete 5 daily missions this week.",
+    "condition": { "type": "weekly_streak", "threshold": 5 },
+    "reward": [{ "type": "coins", "amount": 10000 }, { "type": "dynasty_seal", "amount": 2 }],
+    "hidden": false
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "evt.drought",
+    "name": "Midsummer Drought",
+    "multiplier": 1.5,
+    "durationSeconds": 600,
+    "affectedItems": ["item.raw.wheat", "item.raw.barley", "item.raw.vegetables", "item.raw.apples"]
+  },
+  {
+    "id": "evt.iron_rush",
+    "name": "Military Requisition",
+    "multiplier": 1.6,
+    "durationSeconds": 900,
+    "affectedItems": ["item.raw.iron_ore", "item.proc.refined_iron", "item.proc.tools"]
+  },
+  {
+    "id": "evt.royal_fair",
+    "name": "King's Coronation Fair",
+    "multiplier": 1.4,
+    "durationSeconds": 1200,
+    "affectedItems": ["item.lux.perfume", "item.lux.spices", "item.lux.silk", "item.proc.wine", "item.proc.jewelry"]
+  },
+  {
+    "id": "evt.bumper_harvest",
+    "name": "Abundant Autumn Harvest",
+    "multiplier": 0.75,
+    "durationSeconds": 600,
+    "affectedItems": ["item.raw.wheat", "item.raw.barley", "item.raw.vegetables"]
+  },
+  {
+    "id": "evt.winter_freeze",
+    "name": "The Great Freeze",
+    "multiplier": 1.45,
+    "durationSeconds": 800,
+    "affectedItems": ["item.raw.coal", "item.raw.timber", "item.raw.furs"]
+  }
+]

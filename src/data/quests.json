@@ -1,0 +1,448 @@
+[
+  {
+    "questId": "qst.ch01.001",
+    "chapter": 1,
+    "title": "The Inherited Estate",
+    "description": "Survey the humble estate inherited from your ancestors. Begin by gathering coins from the lands and constructing a basic shelter.",
+    "objectives": [
+      { "type": "click_collect", "count": 10, "description": "Tap to collect coins 10 times" },
+      { "type": "build_count", "count": 1, "description": "Construct your first building" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 100 }, { "type": "xp", "amount": 25 }],
+    "prerequisites": [],
+    "unlockTier": 1
+  },
+  {
+    "questId": "qst.ch01.002",
+    "chapter": 1,
+    "title": "First Furrow",
+    "description": "The soil of Greenvale is fertile and waiting. Sow a wheat field to start automatic harvest.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.agri.wheat_field", "count": 1, "description": "Build a Wheat Field" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 150 }, { "type": "xp", "amount": 30 }],
+    "prerequisites": ["qst.ch01.001"],
+    "unlockTier": 1
+  },
+  {
+    "questId": "qst.ch01.003",
+    "chapter": 1,
+    "title": "First Harvest",
+    "description": "Let the harvesters work the fields until 50 bushels of golden wheat fill your grain stores.",
+    "objectives": [
+      { "type": "produce_item", "targetId": "item.raw.wheat", "count": 50, "description": "Produce 50 Wheat" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 250 }, { "type": "xp", "amount": 50 }],
+    "prerequisites": ["qst.ch01.002"],
+    "unlockTier": 1
+  },
+  {
+    "questId": "qst.ch01.004",
+    "chapter": 1,
+    "title": "A Recognised Holding",
+    "description": "Prove the economic viability of your estate by accumulating 1,000 lifetime coins.",
+    "objectives": [
+      { "type": "lifetime_coins", "count": 1000, "description": "Reach 1,000 lifetime coins" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 500 }, { "type": "xp", "amount": 100 }, { "type": "item", "id": "item.cons.building_permit", "amount": 1 }],
+    "prerequisites": ["qst.ch01.003"],
+    "unlockTier": 1
+  },
+
+  {
+    "questId": "qst.ch02.001",
+    "chapter": 2,
+    "title": "A Roof for the Workers",
+    "description": "Peasants are arriving seeking work. Build sturdier peasant houses to expand housing and the tax base.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.res.peasant_house", "count": 1, "description": "Build a Peasant House" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 350 }, { "type": "xp", "amount": 75 }],
+    "prerequisites": ["qst.ch01.004"],
+    "unlockTier": 2
+  },
+  {
+    "questId": "qst.ch02.002",
+    "chapter": 2,
+    "title": "Bread Before Coin",
+    "description": "Establish a market stall to sell surplus harvest at advantageous prices.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.com.market_stall", "count": 1, "description": "Build a Market Stall" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 400 }, { "type": "xp", "amount": 80 }],
+    "prerequisites": ["qst.ch02.001"],
+    "unlockTier": 2
+  },
+  {
+    "questId": "qst.ch02.003",
+    "chapter": 2,
+    "title": "Self-Sufficiency",
+    "description": "Maintain a steady surplus where passive production and rents outpace upkeep and wages.",
+    "objectives": [
+      { "type": "net_income_sustained", "count": 600, "description": "Sustain positive net income for 10 minutes" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 1000 }, { "type": "xp", "amount": 150 }],
+    "prerequisites": ["qst.ch02.002"],
+    "unlockTier": 2
+  },
+
+  {
+    "questId": "qst.ch03.001",
+    "chapter": 3,
+    "title": "The Miller's Call",
+    "description": "Grain alone fetches little on the high markets. Build a Windmill to grind wheat into fine flour.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.ind.windmill", "count": 1, "description": "Build a Windmill" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 1200 }, { "type": "xp", "amount": 200 }],
+    "prerequisites": ["qst.ch02.003"],
+    "unlockTier": 3
+  },
+  {
+    "questId": "qst.ch03.002",
+    "chapter": 3,
+    "title": "The Oven and the Anvil",
+    "description": "Expand secondary manufacturing: bake warm bread and forge iron tools.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.ind.bakery", "count": 1, "description": "Build a Bakery" },
+      { "type": "build_def", "targetId": "bld.ind.blacksmith", "count": 1, "description": "Build a Blacksmith" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 2000 }, { "type": "xp", "amount": 300 }],
+    "prerequisites": ["qst.ch03.001"],
+    "unlockTier": 3
+  },
+  {
+    "questId": "qst.ch03.003",
+    "chapter": 3,
+    "title": "A Hundred Thousand",
+    "description": "The settlement's wealth expands rapidly. Grow your total lifetime treasury to 100,000 coins.",
+    "objectives": [
+      { "type": "lifetime_coins", "count": 100000, "description": "Accumulate 100,000 lifetime coins" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 5000 }, { "type": "xp", "amount": 400 }],
+    "prerequisites": ["qst.ch03.002"],
+    "unlockTier": 3
+  },
+  {
+    "questId": "qst.ch03.004",
+    "chapter": 3,
+    "title": "The Settlement Prospers",
+    "description": "Ample storage prevents spoilage and stockpiles valuable building materials.",
+    "objectives": [
+      { "type": "own_building_count", "targetId": "bld.com.warehouse", "count": 3, "description": "Own 3 Warehouses" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 8000 }, { "type": "xp", "amount": 500 }],
+    "prerequisites": ["qst.ch03.003"],
+    "unlockTier": 3
+  },
+
+  {
+    "questId": "qst.ch04.001",
+    "chapter": 4,
+    "title": "Under the Mountain",
+    "description": "Venture into the crags of Ironridge to strike your first copper seam.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.min.copper_mine", "count": 1, "description": "Build a Copper Mine" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 7500 }, { "type": "xp", "amount": 600 }],
+    "prerequisites": ["qst.ch03.004"],
+    "unlockTier": 4
+  },
+  {
+    "questId": "qst.ch04.002",
+    "chapter": 4,
+    "title": "The Old Map",
+    "description": "Deep veins produce raw iron ore needed for weapons and royal construction.",
+    "objectives": [
+      { "type": "produce_item", "targetId": "item.raw.iron_ore", "count": 200, "description": "Extract 200 Iron Ore" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 10000 }, { "type": "xp", "amount": 700 }],
+    "prerequisites": ["qst.ch04.001"],
+    "unlockTier": 4
+  },
+  {
+    "questId": "qst.ch04.003",
+    "chapter": 4,
+    "title": "The Smelter's Fire",
+    "description": "Maintain uninterrupted metal extraction and smelting operations.",
+    "objectives": [
+      { "type": "mining_income_sustained", "count": 1800, "description": "Positive mining income for 30 minutes" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 15000 }, { "type": "xp", "amount": 850 }],
+    "prerequisites": ["qst.ch04.002"],
+    "unlockTier": 4
+  },
+
+  {
+    "questId": "qst.ch05.001",
+    "chapter": 5,
+    "title": "A Charter for the Town",
+    "description": "Formalize the township by establishing a grand civic Town Hall.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.roy.town_hall", "count": 1, "description": "Build Town Hall" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 20000 }, { "type": "xp", "amount": 1000 }],
+    "prerequisites": ["qst.ch04.003"],
+    "unlockTier": 5
+  },
+  {
+    "questId": "qst.ch05.002",
+    "chapter": 5,
+    "title": "The Merchant's Road",
+    "description": "Send trade caravans to foreign regions to bring back immense trade profits.",
+    "objectives": [
+      { "type": "establish_routes_count", "count": 1, "description": "Establish your first Trade Route" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 25000 }, { "type": "xp", "amount": 1200 }],
+    "prerequisites": ["qst.ch05.001"],
+    "unlockTier": 5
+  },
+  {
+    "questId": "qst.ch05.003",
+    "chapter": 5,
+    "title": "The Church's Grace",
+    "description": "Erect a parish church to soothe populace unrest and elevate satisfaction.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.roy.church", "count": 1, "description": "Build Parish Church" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 22000 }, { "type": "xp", "amount": 1100 }],
+    "prerequisites": ["qst.ch05.002"],
+    "unlockTier": 5
+  },
+  {
+    "questId": "qst.ch05.004",
+    "chapter": 5,
+    "title": "Two Million",
+    "description": "The town's treasury expands into a grand fortune.",
+    "objectives": [
+      { "type": "lifetime_coins", "count": 2000000, "description": "Reach 2,000,000 lifetime coins" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 50000 }, { "type": "xp", "amount": 2000 }],
+    "prerequisites": ["qst.ch05.003"],
+    "unlockTier": 5
+  },
+
+  {
+    "questId": "qst.ch06.001",
+    "chapter": 6,
+    "title": "Lady Isolde's Offer",
+    "description": "Noble aristocrats wish to take up residence on your burgeoning domain.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.res.noble_house", "count": 1, "description": "Build a Noble House" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 60000 }, { "type": "xp", "amount": 2500 }],
+    "prerequisites": ["qst.ch05.004"],
+    "unlockTier": 6
+  },
+  {
+    "questId": "qst.ch06.002",
+    "chapter": 6,
+    "title": "The First Vintage",
+    "description": "Harvest Sunreach grapes and press them into vintage wine worthy of dukes.",
+    "objectives": [
+      { "type": "produce_item", "targetId": "item.proc.wine", "count": 200, "description": "Produce 200 Vintage Wine" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 75000 }, { "type": "xp", "amount": 3000 }],
+    "prerequisites": ["qst.ch06.001"],
+    "unlockTier": 6
+  },
+  {
+    "questId": "qst.ch06.003",
+    "chapter": 6,
+    "title": "A Noble's Burden",
+    "description": "Demonstrate the peerage of your house with 10,000,000 lifetime coins.",
+    "objectives": [
+      { "type": "lifetime_coins", "count": 10000000, "description": "Reach 10,000,000 lifetime coins" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 150000 }, { "type": "xp", "amount": 5000 }],
+    "prerequisites": ["qst.ch06.002"],
+    "unlockTier": 6
+  },
+
+  {
+    "questId": "qst.ch07.001",
+    "chapter": 7,
+    "title": "The City of Stone",
+    "description": "Establish a Grand Market where merchant princes trade rare commodities.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.com.grand_market", "count": 1, "description": "Build Grand Market" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 200000 }, { "type": "xp", "amount": 6000 }],
+    "prerequisites": ["qst.ch06.003"],
+    "unlockTier": 7
+  },
+  {
+    "questId": "qst.ch07.002",
+    "chapter": 7,
+    "title": "The Scholar's Hall",
+    "description": "Found a University to advance civic technologies and reduce construction expenses.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.roy.university", "count": 1, "description": "Build University" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 250000 }, { "type": "xp", "amount": 7000 }],
+    "prerequisites": ["qst.ch07.001"],
+    "unlockTier": 7
+  },
+  {
+    "questId": "qst.ch07.003",
+    "chapter": 7,
+    "title": "The Crown's Eye",
+    "description": "Levy taxes across your grand city, collecting 100,000 coins in a single collection.",
+    "objectives": [
+      { "type": "single_tax_collect", "count": 100000, "description": "Collect 100,000 tax in one collection" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 300000 }, { "type": "xp", "amount": 8000 }],
+    "prerequisites": ["qst.ch07.002"],
+    "unlockTier": 7
+  },
+  {
+    "questId": "qst.ch07.004",
+    "chapter": 7,
+    "title": "Lordship Rising",
+    "description": "Reach the staggering height of 50,000,000 lifetime coins.",
+    "objectives": [
+      { "type": "lifetime_coins", "count": 50000000, "description": "Reach 50,000,000 lifetime coins" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 500000 }, { "type": "xp", "amount": 10000 }],
+    "prerequisites": ["qst.ch07.003"],
+    "unlockTier": 7
+  },
+
+  {
+    "questId": "qst.ch08.001",
+    "chapter": 8,
+    "title": "The Royal Messenger",
+    "description": "Fortify your estate with a mighty stone Castle overseeing the realm.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.roy.castle", "count": 1, "description": "Build High Castle" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 600000 }, { "type": "xp", "amount": 12000 }],
+    "prerequisites": ["qst.ch07.004"],
+    "unlockTier": 8
+  },
+  {
+    "questId": "qst.ch08.002",
+    "chapter": 8,
+    "title": "The Charters of Lordship",
+    "description": "Establish city Barracks to suppress unrest and a Royal Mint to strike sovereign currency.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.roy.barracks", "count": 1, "description": "Build Barracks" },
+      { "type": "build_def", "targetId": "bld.roy.royal_mint", "count": 1, "description": "Build Royal Mint" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 800000 }, { "type": "xp", "amount": 15000 }],
+    "prerequisites": ["qst.ch08.001"],
+    "unlockTier": 8
+  },
+  {
+    "questId": "qst.ch08.003",
+    "chapter": 8,
+    "title": "The King's Ledger",
+    "description": "Command wealth that rivals the monarch himself.",
+    "objectives": [
+      { "type": "lifetime_coins", "count": 250000000, "description": "Reach 250,000,000 lifetime coins" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 1000000 }, { "type": "xp", "amount": 20000 }],
+    "prerequisites": ["qst.ch08.002"],
+    "unlockTier": 8
+  },
+
+  {
+    "questId": "qst.ch09.001",
+    "chapter": 9,
+    "title": "The Crownlands Invitation",
+    "description": "Construct the magnificent Royal Palace in the heart of Eldoria.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.roy.royal_palace", "count": 1, "description": "Build Royal Palace" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 2000000 }, { "type": "xp", "amount": 30000 }],
+    "prerequisites": ["qst.ch08.003"],
+    "unlockTier": 9
+  },
+  {
+    "questId": "qst.ch09.002",
+    "chapter": 9,
+    "title": "An Embassy Worth its Salt",
+    "description": "Open diplomatic channels across the seas with a dedicated Trade Embassy.",
+    "objectives": [
+      { "type": "build_def", "targetId": "bld.roy.trade_embassy", "count": 1, "description": "Build Trade Embassy" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 2500000 }, { "type": "xp", "amount": 35000 }],
+    "prerequisites": ["qst.ch09.001"],
+    "unlockTier": 9
+  },
+  {
+    "questId": "qst.ch09.003",
+    "chapter": 9,
+    "title": "The Royal Fleet",
+    "description": "Oversee an expansive merchant empire across the continents.",
+    "objectives": [
+      { "type": "active_routes_count", "count": 5, "description": "Maintain 5 active trade routes" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 3000000 }, { "type": "xp", "amount": 40000 }],
+    "prerequisites": ["qst.ch09.002"],
+    "unlockTier": 9
+  },
+  {
+    "questId": "qst.ch09.004",
+    "chapter": 9,
+    "title": "The Imperial Claim",
+    "description": "Attain sovereign dominance with 1,000,000,000 lifetime coins.",
+    "objectives": [
+      { "type": "lifetime_coins", "count": 1000000000, "description": "Reach 1,000,000,000 lifetime coins" }
+    ],
+    "rewards": [{ "type": "coins", "amount": 5000000 }, { "type": "xp", "amount": 50000 }],
+    "prerequisites": ["qst.ch09.003"],
+    "unlockTier": 9
+  },
+
+  {
+    "questId": "qst.ch10.001",
+    "chapter": 10,
+    "title": "The First Dynasty",
+    "description": "Pass down your realm to the next generation, forging your first Dynasty Seals.",
+    "objectives": [
+      { "type": "prestige_count", "count": 1, "description": "Complete first PRESTIGE" }
+    ],
+    "rewards": [{ "type": "dynasty_seal", "amount": 5 }, { "type": "xp", "amount": 50000 }],
+    "prerequisites": ["qst.ch09.004"],
+    "unlockTier": 10
+  },
+  {
+    "questId": "qst.ch10.002",
+    "chapter": 10,
+    "title": "A Deeper Legacy",
+    "description": "Prestige a second time and advance any legacy tree node to rank 3 or higher.",
+    "objectives": [
+      { "type": "prestige_count", "count": 2, "description": "Complete second prestige" },
+      { "type": "legacy_max_rank", "count": 3, "description": "Reach legacy rank >= 3 on any node" }
+    ],
+    "rewards": [{ "type": "dynasty_seal", "amount": 10 }, { "type": "xp", "amount": 75000 }],
+    "prerequisites": ["qst.ch10.001"],
+    "unlockTier": 10
+  },
+  {
+    "questId": "qst.ch10.003",
+    "chapter": 10,
+    "title": "A Legacy Eternal",
+    "description": "Prestige three times and master at least 3 distinct legacy branches to rank 3.",
+    "objectives": [
+      { "type": "prestige_count", "count": 3, "description": "Complete third prestige" },
+      { "type": "legacy_branches_rank3", "count": 3, "description": "Rank >= 3 on 3 legacy branches" }
+    ],
+    "rewards": [{ "type": "dynasty_seal", "amount": 20 }, { "type": "xp", "amount": 100000 }],
+    "prerequisites": ["qst.ch10.002"],
+    "unlockTier": 10
+  },
+  {
+    "questId": "qst.ch10.004",
+    "chapter": 10,
+    "title": "The Emperor of Eldoria",
+    "description": "Assemble the three lost fragments of the Imperial Crown and claim eternal dominion.",
+    "objectives": [
+      { "type": "relic_fragments_count", "count": 3, "description": "Assemble 3 Relic Crown fragments" }
+    ],
+    "rewards": [{ "type": "dynasty_seal", "amount": 50 }, { "type": "xp", "amount": 250000 }],
+    "prerequisites": ["qst.ch10.003"],
+    "unlockTier": 10
+  }
+]

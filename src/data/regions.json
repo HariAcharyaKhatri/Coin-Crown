@@ -1,0 +1,107 @@
+[
+  {
+    "id": "reg.greenvale",
+    "name": "Greenvale",
+    "tier": 1,
+    "description": "Lush fertile plains where wheat and vegetables flourish in rich soil.",
+    "perks": {
+      "cropYieldMult": 1.20,
+      "agriLandDiscount": 0.10
+    }
+  },
+  {
+    "id": "reg.riverford",
+    "name": "Riverford",
+    "tier": 2,
+    "description": "A bustling river delta, known for thriving fish markets and caravan docks.",
+    "perks": {
+      "tradeProfitMult": 1.15,
+      "fishYieldMult": 1.10,
+      "caravanDiscount": 0.20
+    }
+  },
+  {
+    "id": "reg.silverwood",
+    "name": "Silverwood",
+    "tier": 3,
+    "description": "Ancient woodland rich with tall oaks, white pine, and wild game.",
+    "perks": {
+      "timberYieldMult": 1.20,
+      "woodcutterDiscount": 0.15
+    }
+  },
+  {
+    "id": "reg.stonehaven",
+    "name": "Stonehaven",
+    "tier": 4,
+    "description": "Rugged rocky bluffs supplying quarry stones and limestone blocks.",
+    "perks": {
+      "stoneYieldMult": 1.20,
+      "stoneBuildDiscount": 0.15
+    }
+  },
+  {
+    "id": "reg.ironridge",
+    "name": "Ironridge",
+    "tier": 4,
+    "description": "Craggy peaks filled with deep veins of coal, iron, and copper ore.",
+    "perks": {
+      "ironYieldMult": 1.20,
+      "copperYieldMult": 1.20,
+      "smelterFuelDiscount": 0.20
+    }
+  },
+  {
+    "id": "reg.sunreach",
+    "name": "Sunreach Valley",
+    "tier": 5,
+    "description": "Sun-drenched hills ideal for sprawling vineyards, orchards, and livestock.",
+    "perks": {
+      "wineYieldMult": 1.20,
+      "livestockYieldMult": 1.20,
+      "luxurySaleMult": 1.15
+    }
+  },
+  {
+    "id": "reg.highcourt",
+    "name": "Highcourt",
+    "tier": 6,
+    "description": "The administrative heart of the nobles, where taxes and rents run high.",
+    "perks": {
+      "taxMult": 1.15,
+      "rentMult": 1.10,
+      "wagesMult": 1.20
+    }
+  },
+  {
+    "id": "reg.goldcrest",
+    "name": "Goldcrest Peaks",
+    "tier": 6,
+    "description": "Gleaming mountain ranges holding deep gold veins and precious gem seams.",
+    "perks": {
+      "goldYieldMult": 1.25,
+      "refineryCostDiscount": 0.10
+    }
+  },
+  {
+    "id": "reg.frostmere",
+    "name": "Frostmere",
+    "tier": 8,
+    "description": "Frigid northern tundra holding rare winter furs, amber, and ice crystals.",
+    "perks": {
+      "farmingDisabledWinter": true,
+      "uniqueLuxuryOnly": true
+    }
+  },
+  {
+    "id": "reg.crownlands",
+    "name": "The Crownlands",
+    "tier": 9,
+    "description": "The sovereign imperial seat, providing immense royal prestige and dominion.",
+    "perks": {
+      "royalIncomeMult": 1.25,
+      "taxMult": 1.20,
+      "bonusManagerSlots": 1
+    }
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "name": "crown-and-coin",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./node_modules/vite/bin/vite.js",
+    "build": "node ./node_modules/typescript/bin/tsc --noEmit && node ./node_modules/vite/bin/vite.js build",
+    "preview": "node ./node_modules/vite/bin/vite.js preview",
+    "test": "node ./node_modules/vitest/vitest.mjs run",
+    "test:watch": "node ./node_modules/vitest/vitest.mjs",
+    "test:coverage": "node ./node_modules/vitest/vitest.mjs run --coverage",
+    "test:e2e": "playwright test",
+    "verify:ids": "node --import tsx scripts/verify-ids.ts",
+    "verify:references": "node --import tsx scripts/verify-references.ts",
+    "verify:assets": "node --import tsx scripts/verify-asset-coverage.ts",
+    "verify:literals": "node --import tsx scripts/no-numeric-literals.ts"
+  },
+  "dependencies": {
+    "dexie": "^4.0.4",
+    "pixi.js": "^8.0.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "axe-core": "^4.9.0",
+    "fake-indexeddb": "^6.0.0",
+    "jsdom": "^24.0.0",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0"
+  }
+}

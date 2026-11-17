@@ -1,0 +1,58 @@
+[
+  {
+    "profession": "farmer",
+    "name": "Peasant Farmer",
+    "hireCost": 50,
+    "baseWage": 1.0,
+    "description": "Works agricultural fields, pastures, and orchards."
+  },
+  {
+    "profession": "craftsman",
+    "name": "Artisan Craftsman",
+    "hireCost": 120,
+    "baseWage": 1.10,
+    "description": "Operates workshops, mills, and kilns to refine raw goods."
+  },
+  {
+    "profession": "miner",
+    "name": "Quarry Miner",
+    "hireCost": 150,
+    "baseWage": 1.15,
+    "description": "Digs deep into mountain veins and rock quarries."
+  },
+  {
+    "profession": "builder",
+    "name": "Master Mason",
+    "hireCost": 200,
+    "baseWage": 1.20,
+    "description": "Erects buildings and maintains structural integrity."
+  },
+  {
+    "profession": "merchant",
+    "name": "Market Trader",
+    "hireCost": 180,
+    "baseWage": 1.10,
+    "description": "Manages market stalls, warehouses, and trade caravans."
+  },
+  {
+    "profession": "guard",
+    "name": "City Watchman",
+    "hireCost": 220,
+    "baseWage": 1.05,
+    "description": "Patrols towns and garrisons to keep unrest in check."
+  },
+  {
+    "profession": "administrator",
+    "name": "Town Scribe",
+    "hireCost": 350,
+    "baseWage": 1.15,
+    "description": "Keeps tax ledgers and administers civic offices."
+  },
+  {
+    "profession": "scholar",
+    "name": "Academy Scholar",
+    "hireCost": 500,
+    "baseWage": 1.25,
+    "description": "Conducts research and university lectures."
+  }
+]

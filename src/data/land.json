@@ -1,0 +1,16 @@
+{
+  "basePlotCost": 150,
+  "costMultiplierPerPlot": 1.15,
+  "plotsPerRegion": 25,
+  "categories": [
+    { "id": "farmland", "name": "Arable Farmland", "color": "#7a9a3b" },
+    { "id": "forest", "name": "Deep Woodland", "color": "#2d5a27" },
+    { "id": "mountain", "name": "Rocky Crags", "color": "#5c5c5c" },
+    { "id": "quarry", "name": "Stone Quarry", "color": "#8c857b" },
+    { "id": "waterfront", "name": "River Waterfront", "color": "#387099" },
+    { "id": "residential", "name": "Town Quarters", "color": "#b36b3b" },
+    { "id": "commercial", "name": "Market Square", "color": "#d49a37" },
+    { "id": "civic", "name": "Civic Center", "color": "#8f447d" },
+    { "id": "military", "name": "Garrison Grounds", "color": "#9e382b" }
+  ]
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "leg.agri.yield",
+    "branch": "agriculture",
+    "name": "Abundant Harvests",
+    "description": "+10% crop output per rank",
+    "maxRank": 5,
+    "effectType": "crop_output",
+    "effectValuePerRank": 0.10
+  },
+  {
+    "id": "leg.agri.cost",
+    "branch": "agriculture",
+    "name": "Farming Subsidies",
+    "description": "-5% agricultural purchase and upgrade cost per rank",
+    "maxRank": 5,
+    "effectType": "agri_cost_discount",
+    "effectValuePerRank": 0.05
+  },
+  {
+    "id": "leg.ind.speed",
+    "branch": "industry",
+    "name": "Master Artisans",
+    "description": "+10% workshop output per rank",
+    "maxRank": 5,
+    "effectType": "industry_output",
+    "effectValuePerRank": 0.10
+  },
+  {
+    "id": "leg.ind.storage",
+    "branch": "industry",
+    "name": "Grand Granaries",
+    "description": "+20% global warehouse storage capacity per rank",
+    "maxRank": 5,
+    "effectType": "storage_mult",
+    "effectValuePerRank": 0.20
+  },
+  {
+    "id": "leg.min.extraction",
+    "branch": "mining",
+    "name": "Deep Seams",
+    "description": "+10% mineral extraction per rank",
+    "maxRank": 5,
+    "effectType": "mining_output",
+    "effectValuePerRank": 0.10
+  },
+  {
+    "id": "leg.min.smelting",
+    "branch": "mining",
+    "name": "Efficient Furnaces",
+    "description": "-10% fuel required for smelting per rank",
+    "maxRank": 5,
+    "effectType": "smelter_discount",
+    "effectValuePerRank": 0.10
+  },
+  {
+    "id": "leg.com.margins",
+    "branch": "commerce",
+    "name": "Silk Routes",
+    "description": "+8% market item selling price per rank",
+    "maxRank": 5,
+    "effectType": "market_sell_bonus",
+    "effectValuePerRank": 0.08
+  },
+  {
+    "id": "leg.com.caravans",
+    "branch": "commerce",
+    "name": "Swift Caravans",
+    "description": "-10% trade route travel duration per rank",
+    "maxRank": 5,
+    "effectType": "route_speed",
+    "effectValuePerRank": 0.10
+  },
+  {
+    "id": "leg.gov.tax",
+    "branch": "governance",
+    "name": "Imperial Tithe",
+    "description": "+5% tax collection efficiency per rank",
+    "maxRank": 5,
+    "effectType": "tax_efficiency",
+    "effectValuePerRank": 0.05
+  },
+  {
+    "id": "leg.gov.unrest",
+    "branch": "governance",
+    "name": "Pax Eldoria",
+    "description": "-10% unrest generation per rank",
+    "maxRank": 5,
+    "effectType": "unrest_reduction",
+    "effectValuePerRank": 0.10
+  },
+  {
+    "id": "leg.dyn.click",
+    "branch": "dynasty",
+    "name": "Royal Mandate",
+    "description": "+25% click collect power per rank",
+    "maxRank": 5,
+    "effectType": "click_power",
+    "effectValuePerRank": 0.25
+  },
+  {
+    "id": "leg.dyn.vault",
+    "branch": "dynasty",
+    "name": "Gilded Strongbox",
+    "description": "+50% vault capacity per rank",
+    "maxRank": 5,
+    "effectType": "vault_capacity",
+    "effectValuePerRank": 0.50
+  }
+]

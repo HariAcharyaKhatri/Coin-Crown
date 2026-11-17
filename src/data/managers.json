@@ -1,0 +1,50 @@
+[
+  {
+    "id": "mgr.farm_bailiff",
+    "name": "Bailiff Alden",
+    "specialty": "agriculture",
+    "baseBonusMultiplier": 0.15,
+    "hireCost": 500,
+    "description": "An experienced overseer who increases farm and livestock yields by 15%."
+  },
+  {
+    "id": "mgr.guildmaster",
+    "name": "Guildmaster Thorne",
+    "specialty": "industry",
+    "baseBonusMultiplier": 0.15,
+    "hireCost": 1200,
+    "description": "Master artisan coordinating workshops, boosting manufacturing output by 15%."
+  },
+  {
+    "id": "mgr.mine_foreman",
+    "name": "Foreman Roderick",
+    "specialty": "mining",
+    "baseBonusMultiplier": 0.20,
+    "hireCost": 3000,
+    "description": "Veteran underground prospector boosting mine extraction by 20%."
+  },
+  {
+    "id": "mgr.trade_factor",
+    "name": "Factor Varis",
+    "specialty": "commerce",
+    "baseBonusMultiplier": 0.10,
+    "hireCost": 5000,
+    "description": "Keen merchant negotiator increasing commercial revenue and trade margins by 10%."
+  },
+  {
+    "id": "mgr.steward",
+    "name": "Steward Eleanor",
+    "specialty": "residential",
+    "baseBonusMultiplier": 0.15,
+    "hireCost": 8000,
+    "description": "Diligent estate steward boosting residential rent yields by 15%."
+  },
+  {
+    "id": "mgr.chancellor",
+    "name": "Chancellor Godfrey",
+    "specialty": "royal",
+    "baseBonusMultiplier": 0.10,
+    "hireCost": 20000,
+    "description": "Eminent royal official improving tax efficiency by 10% and reducing civic unrest."
+  }
+]
