@@ -1,0 +1,29 @@
+{
+  "gameTitle": "Crown & Coin",
+  "subtitle": "The Rise of a Medieval Dynasty",
+  "navigation": {
+    "dashboard": "Dashboard",
+    "estate_view": "Estate View",
+    "region_map": "Eldoria Map",
+    "land": "Land & Plots",
+    "buildings": "Buildings",
+    "building_detail": "Building Inspection",
+    "agriculture": "Agriculture",
+    "mining": "Mining & Smelting",
+    "inventory": "Inventory",
+    "market": "Grand Market",
+    "routes": "Trade Routes",
+    "workers": "Workers",
+    "managers": "Managers",
+    "properties": "Properties & Rents",
+    "treasury": "Royal Treasury",
+    "tax": "Taxation",
+    "population": "Demographics",
+    "university": "University",
+    "quests": "Quests",
+    "story": "Chronicles",
+    "achievements": "Achievements",
+    "dynasty": "Dynasty & Prestige",
+    "settings": "Settings"
+  }
+}

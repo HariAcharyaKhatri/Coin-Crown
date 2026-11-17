@@ -1,0 +1,87 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  min-height: var(--min-tap-target);
+  min-width: var(--min-tap-target);
+  padding: 0 var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all 0.15s ease;
+  user-select: none;
+  border: 1px solid transparent;
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  filter: grayscale(0.8);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.sm {
+  min-height: 36px;
+  font-size: var(--font-size-sm);
+  padding: 0 var(--space-sm);
+}
+
+.md {
+  min-height: var(--min-tap-target);
+  font-size: var(--font-size-base);
+}
+
+.lg {
+  min-height: 52px;
+  font-size: var(--font-size-md);
+  padding: 0 var(--space-lg);
+}
+
+.primary {
+  background: linear-gradient(180deg, var(--color-gold-light), var(--color-gold-dark));
+  color: #1a1005;
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-sm);
+}
+
+.primary:not(:disabled):hover {
+  background: var(--color-gold-light);
+  box-shadow: var(--shadow-gold);
+}
+
+.primary:not(:disabled):active {
+  transform: translateY(1px);
+}
+
+.secondary {
+  background: var(--color-bg-elevated);
+  color: var(--color-text-main);
+  border-color: var(--color-border);
+}
+
+.secondary:not(:disabled):hover {
+  background: var(--color-bg-card-hover);
+  border-color: var(--color-border-bright);
+}
+
+.danger {
+  background: var(--color-accent-red);
+  color: #fff;
+}
+
+.danger:not(:disabled):hover {
+  filter: brightness(1.15);
+}
+
+.gold {
+  background: rgba(229, 178, 76, 0.15);
+  color: var(--color-gold-light);
+  border-color: var(--color-gold);
+}
+
+.gold:not(:disabled):hover {
+  background: rgba(229, 178, 76, 0.3);
+}

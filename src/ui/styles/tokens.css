@@ -1,0 +1,49 @@
+:root {
+  /* Colors */
+  --color-bg-base: #120e0c;
+  --color-bg-surface: #1c1613;
+  --color-bg-elevated: #28201b;
+  --color-bg-card: #221a16;
+  --color-bg-card-hover: #2e231e;
+
+  --color-border: #423429;
+  --color-border-bright: #785a3a;
+
+  --color-gold: #e5b24c;
+  --color-gold-light: #f7d27e;
+  --color-gold-dark: #a87922;
+
+  --color-text-main: #f5eedf;
+  --color-text-muted: #b5a494;
+  --color-text-dim: #7f6e60;
+
+  --color-accent-red: #c94a38;
+  --color-accent-green: #48a356;
+  --color-accent-blue: #3f88c5;
+  --color-accent-purple: #9c4bb8;
+
+  /* Sizing & Spacing */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Target & Typography */
+  --min-tap-target: 44px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 22px;
+  --font-size-xl: 28px;
+  --font-size-title: 34px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.5);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.7);
+  --shadow-gold: 0 0 15px rgba(229, 178, 76, 0.25);
+}
