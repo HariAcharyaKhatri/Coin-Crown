@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7d27e" />
+      <stop offset="50%" stop-color="#e5b24c" />
+      <stop offset="100%" stop-color="#a87922" />
+    </linearGradient>
+    <linearGradient id="rubyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b6b" />
+      <stop offset="100%" stop-color="#c92a2a" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#1c1613" stroke="#e5b24c" stroke-width="2.5" />
+  
+  <!-- Crown Base -->
+  <path d="M16 42 L48 42 L45 22 L37 32 L32 16 L27 32 L19 22 Z" fill="url(#goldGrad)" stroke="#785a3a" stroke-width="1.5" stroke-linejoin="round" />
+  
+  <!-- Jewels on Crown -->
+  <circle cx="32" cy="16" r="2.5" fill="url(#rubyGrad)" />
+  <circle cx="19" cy="22" r="2" fill="url(#goldGrad)" />
+  <circle cx="45" cy="22" r="2" fill="url(#goldGrad)" />
+  <circle cx="32" cy="36" r="2.5" fill="url(#rubyGrad)" />
+  
+  <!-- Crown Band -->
+  <rect x="16" y="40" width="32" height="4" rx="1" fill="#785a3a" />
+  <circle cx="24" cy="42" r="1.2" fill="url(#goldGrad)" />
+  <circle cx="32" cy="42" r="1.2" fill="url(#goldGrad)" />
+  <circle cx="40" cy="42" r="1.2" fill="url(#goldGrad)" />
+</svg>

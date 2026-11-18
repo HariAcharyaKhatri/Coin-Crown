@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Crown & Coin</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      // Converts path to query parameter or hash and redirects to index.html
+      const pathSegments = window.location.pathname.split('/').filter(Boolean);
+      const repoName = 'Coin-Crown';
+      const repoIndex = pathSegments.indexOf(repoName);
+      let targetRoute = '';
+      if (repoIndex !== -1 && pathSegments.length > repoIndex + 1) {
+        targetRoute = pathSegments.slice(repoIndex + 1).join('/');
+      }
+      const newUrl = window.location.origin + '/Coin-Crown/' + (targetRoute ? '#' + targetRoute : '');
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body>
+    Redirecting to Crown & Coin...
+  </body>
+</html>

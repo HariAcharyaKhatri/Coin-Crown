@@ -53,8 +53,42 @@ export interface UIState {
   setHapticsEnabled: (enabled: boolean) => void;
 }
 
+export const VALID_SCREENS = new Set<ScreenId>([
+  'dashboard',
+  'estate_view',
+  'region_map',
+  'land',
+  'buildings',
+  'building_detail',
+  'agriculture',
+  'mining',
+  'inventory',
+  'market',
+  'routes',
+  'workers',
+  'managers',
+  'properties',
+  'treasury',
+  'tax',
+  'population',
+  'university',
+  'quests',
+  'story',
+  'achievements',
+  'dynasty',
+  'settings',
+]);
+
+function getInitialScreen(): ScreenId {
+  if (typeof window !== 'undefined' && window.location.hash) {
+    const raw = window.location.hash.replace(/^#\/?/, '') as ScreenId;
+    if (VALID_SCREENS.has(raw)) return raw;
+  }
+  return 'dashboard';
+}
+
 export const useUIStore = create<UIState>((set) => ({
-  activeScreen: 'dashboard',
+  activeScreen: getInitialScreen(),
   selectedBuildingInstanceId: null,
   selectedRegionId: null,
   activeModal: null,
@@ -63,7 +97,12 @@ export const useUIStore = create<UIState>((set) => ({
   soundEnabled: true,
   hapticsEnabled: true,
 
-  setActiveScreen: (screen) => set({ activeScreen: screen, isMobileMenuOpen: false }),
+  setActiveScreen: (screen) => {
+    if (typeof window !== 'undefined' && window.location.hash !== `#${screen}`) {
+      window.location.hash = screen;
+    }
+    set({ activeScreen: screen, isMobileMenuOpen: false });
+  },
   setSelectedBuilding: (id) => set({ selectedBuildingInstanceId: id }),
   setSelectedRegion: (id) => set({ selectedRegionId: id }),
   openModal: (modalId) => set({ activeModal: modalId }),
@@ -80,3 +119,12 @@ export const useUIStore = create<UIState>((set) => ({
   setSoundEnabled: (enabled) => set({ soundEnabled: enabled }),
   setHapticsEnabled: (enabled) => set({ hapticsEnabled: enabled }),
 }));
+
+if (typeof window !== 'undefined') {
+  window.addEventListener('hashchange', () => {
+    const raw = window.location.hash.replace(/^#\/?/, '') as ScreenId;
+    if (VALID_SCREENS.has(raw) && useUIStore.getState().activeScreen !== raw) {
+      useUIStore.getState().setActiveScreen(raw);
+    }
+  });
+}

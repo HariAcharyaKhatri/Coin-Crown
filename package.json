@@ -14,7 +14,8 @@
     "verify:ids": "node --import tsx scripts/verify-ids.ts",
     "verify:references": "node --import tsx scripts/verify-references.ts",
     "verify:assets": "node --import tsx scripts/verify-asset-coverage.ts",
-    "verify:literals": "node --import tsx scripts/no-numeric-literals.ts"
+    "verify:literals": "node --import tsx scripts/no-numeric-literals.ts",
+    "verify:dist": "node --import tsx scripts/verify-dist.ts"
   },
   "dependencies": {
     "dexie": "^4.0.4",
